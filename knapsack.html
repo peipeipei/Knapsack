@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<head>
+    <link rel="stylesheet" type="text/css" href="knapsack.css">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+    </script>
+    
+    
+    
+    
+    <script>
+    
+    $(document).ready(function(){
+        
+        var value = 0;
+        var weight = 0;
+        
+        console.log(value);
+        
+        $(".stolen-item").click(function(){
+            var name = $(this).data("name"); 
+            var location = $(this).parent().get(0).id;
+            
+            if (location == "house"){
+                $(this).appendTo("#knapsack");
+            }
+            if (location == "knapsack"){
+                $(this).appendTo("#house");
+            }
+        })
+    })
+    
+    
+    </script>
+    
+    
+</head>
+
+
+
+<div class="main">
+
+    <div class="minor">
+        <div class="top" id="houseTop">
+            </br>
+            <img src="college.jpg" data-name="college">
+        </div>
+        
+        <div class="inner" id="house">
+        
+            <img src="iphone.jpg" data-value="175" data-weight="10" data-name="iphone" class="stolen-item">
+            <img src="beats.jpg" data-value="90" data-weight="9" data-name="beats" class="stolen-item">
+            <img src="dslr.jpg" data-value="20" data-weight="4" data-name="dslr" class="stolen-item">
+            <img src="dvd.jpg" data-value="50" data-weight="2" data-name="dvd" class="stolen-item">
+            <img src="iMac.jpg" data-value="10" data-weight="1" data-name="iMac" class="stolen-item">
+            <img src="macbook.jpg" data-value="200" data-weight="20" data-name="macbook" class="stolen-item">
+            <img src="walkman.jpg" data-value="175" data-weight="10" data-name="walkman" class="stolen-item">
+            <img src="macColor.jpg" data-value="90" data-weight="9" data-name="macColor" class="stolen-item">
+            
+            
+            
+        </div>
+    
+    </div>
+    
+    <div class="minor">
+        <div class="top" id="knaptop">
+            <img src="backpack.jpg" data-name="backpack">
+            <text>(</text> 
+            <text class="info" id="value">temp1</text>
+            <text>, </text>
+            <text class="info" id="weight">temp2</text>
+            <text>)</text>
+        </div>
+        
+        <div class="inner" id="knapsack">
+        
+        </div>
+    
+    </div>
+
+</div>
+
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    
+    
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+body{
+    width: 100%;
+    padding: 2%;
+}
+
+.minor{
+    width: 35%;
+    float: left;
+}
+
+.inner{
+    border: 1px solid black;
+    width: 95%;
+    height: 350px;
+    padding: 1%;
+}
+
+.top{
+    height: 200px;
+}
+
+.top img{
+    max-height: 100%;
+    max-width: 50%;
+}
+
+.inner img{
+    max-height: 32%;
+    max-width: 32%;
+    align-self: center;
+}
+
