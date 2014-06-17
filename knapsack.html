@@ -16,24 +16,40 @@
     
     
     <script>
+        
+        
+        
+    
     
     $(document).ready(function(){
         
         var value = 0;
         var weight = 0;
         
-        console.log(value);
-        
         $(".stolen-item").click(function(){
             var name = $(this).data("name"); 
             var location = $(this).parent().get(0).id;
             
             if (location == "house"){
-                $(this).appendTo("#knapsack");
+                weight += $(this).data("weight");
+                if (weight <= 20){
+                    $(this).appendTo("#knapsack");
+                    value += $(this).data("value");
+                }
+                else{
+                    weight -= $(this).data("weight");  
+                    //TODO: Add tasteful alert
+                }
             }
             if (location == "knapsack"){
                 $(this).appendTo("#house");
+                weight -= $(this).data("weight");
+                value -= $(this).data("value");
             }
+            
+            $('#value').html(value);
+            $('#weight').html(weight);
+            
         })
     })
     
@@ -73,11 +89,11 @@
     <div class="minor">
         <div class="top" id="knaptop">
             <img src="backpack.jpg" data-name="backpack">
-            <text>(</text> 
-            <text class="info" id="value">temp1</text>
+            <text>($</text> 
+            <text class="info" id="value" data-value="0"></text>
             <text>, </text>
-            <text class="info" id="weight">temp2</text>
-            <text>)</text>
+            <text class="info" id="weight" data-weight="0"></text>
+            <text>kg)</text>
         </div>
         
         <div class="inner" id="knapsack">
