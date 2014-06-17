@@ -3,6 +3,7 @@ body{
     padding: 2%;
 }
 
+
 .minor{
     width: 35%;
     float: left;
@@ -11,12 +12,13 @@ body{
 .inner{
     border: 1px solid black;
     width: 95%;
-    height: 350px;
+    height: 400px;
     padding: 1%;
 }
 
 .top{
     height: 200px;
+    align-content: auto;
 }
 
 .top img{
@@ -24,9 +26,27 @@ body{
     max-width: 50%;
 }
 
-.inner img{
-    max-height: 32%;
-    max-width: 32%;
+
+.inner figure{
+    height: 31%;
+    width: 31%;
+    float: left;
     align-self: center;
+    vertical-align: middle;
 }
+
+figure img{
+    max-height: 80%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+figure figcaption{
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+
 
