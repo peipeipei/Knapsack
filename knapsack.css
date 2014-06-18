@@ -16,6 +16,11 @@ body{
     padding: 1%;
 }
 
+#d3s{
+    padding: 0%;
+    
+}
+
 .top{
     height: 200px;
     align-content: auto;
@@ -39,6 +44,13 @@ figure img{
     max-height: 80%;
     max-width: 100%;
     vertical-align: middle;
+    
+}
+
+figure img:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+    cursor: pointer;
 }
 
 figure figcaption{
@@ -46,7 +58,14 @@ figure figcaption{
     text-align: center;
 }
 
+.instruct{
+    text-align: center;
+}
 
+#d3chart{
+    //border: 1px black solid;
+    max-height: 400;
+}
 
 
 
