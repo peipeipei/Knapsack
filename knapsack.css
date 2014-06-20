@@ -98,6 +98,7 @@ figure figcaption{
 
 .extraInfo{
     font-weight: bold;
+    cursor: pointer;
 }
 
 .theInfo{
