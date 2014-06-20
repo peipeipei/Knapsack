@@ -8,9 +8,10 @@ body {
 
 
 .minor{
-    width: 33%;
+    width: 49%;
     float: left;
-}
+    margin-bottom: 20px;
+}   
 
 .inner{
     border: 1px solid black;
