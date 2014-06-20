@@ -2,6 +2,10 @@
 <html>
 <body>
     
+    <title>Knapsack Problem</title>
+    
+    
+    
 <head>
     <link rel="stylesheet" type="text/css" href="knapsack.css">   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +34,7 @@
     <div class="minor">
         <div class="top" id="houseTop">
             </br>
-            <img src="college.jpg" data-name="college">
+            <img src="house.png" data-name="house">
         </div>
         
         <div class="inner" id="house">
@@ -51,12 +55,21 @@
     
     <div class="minor">
         <div class="top" id="knaptop">
-            <img src="backpack.jpg" data-name="backpack">
-            <text>($</text> 
-            <text class="info" id="value" data-value="0"></text>
-            <text>, </text>
-            <text class="info" id="weight" data-weight="0"></text>
-            <text>kg)</text>
+            <div class="topHalf">
+            <img src="burglar.png" data-name="burglar">
+                
+                <text class="info">($</text> 
+                <text class="info" id="value" data-value="0"></text>
+                <text class="info">, </text>
+                <text class="info" id="weight" data-weight="0"></text>
+                <text class="info">kg)</text>
+                
+            </div>
+            
+            <div class="bottomHalf">
+                <text>Remaining Space: </text>
+                <text class="stillSpace"></text>
+            </div>
         </div>
         
         <div class="inner" id="knapsack">
@@ -70,26 +83,28 @@
     <div class="minor">
         <div class="top" id="scatter">
             <div>
-                <text>Best Value to Weight Ratio: </text>
-                <text class="ratio">0</text>
+                <text class=extraInfo>Best Value-to-Weight Ratio: </text>
+                <text class="theInfo" id="ratio">0</text>
             </div>
             
             <div>
-                <text>Items in the Best Ratio: </text>
-                <text class="ratioItems">None</text>
+                <text class=extraInfo>Items in the Best Ratio: </text>
+                <text class="theInfo" id="ratioItems">None</text>
             </div>
             
             <div>
-                <text>Best Value So Far: </text>
-                <text class="bestValue">0</text>
+                <text class=extraInfo>Best Value So Far: </text>
+                <text class="theInfo" id="bestValue">0</text>
             </div>
             
             <div>
-                <text>Items in Best Value: </text>
-                <text class="bestItems">None</text>
+                <text class=extraInfo>Items in Best Value: </text>
+                <text class="theInfo" id="bestItems">None</text>
             </div>
             
-            <div><button class="clearSc">Clear Scatter Plot</button></div>
+            <br>
+            <span><button class="clearValues">Clear Values</button></span>
+            <span><button class="clearSc">Clear Scatter Plot</button></span>
         
         </div>
         <div class="inner" id="d3s">

@@ -1,6 +1,9 @@
-body{
+
+body {
     width: 100%;
     padding: 2%;
+/*    background-color: #ffe1e7 !important;*/
+    background-image: url(whiteStars.gif) !important;
 }
 
 
@@ -13,16 +16,20 @@ body{
     border: 1px solid black;
     width: 95%;
     height: 400px;
-    padding: 1%;
+    padding: 7%;
     background-color: white;
 }
 
 #house{
-    background-image: url(hardwood.jpg);
+/*    background-image: url(hardwood.jpg);*/
+    background-color: rgba(197, 255, 139,0.8);
 }
 
+
 #knapsack{
-    background-image: url(jeans.jpg);
+/*    background-image: url(jeans.jpg);*/
+/*    background-color: #CBC0D2;*/
+    background-color: rgba(203,192,210,0.8);
 }
 
 
@@ -36,6 +43,7 @@ body{
     height: 200px;
     align-content: auto;
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.70) !important;
 }
 
 .top img{
@@ -50,7 +58,12 @@ body{
     float: left;
     align-self: center;
     vertical-align: middle;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
 }
+
+
 
 figure img{
     max-height: 80%;
@@ -82,4 +95,24 @@ figure figcaption{
 }
 
 
+.extraInfo{
+    font-weight: bold;
+}
 
+.theInfo{
+    font-size: larger;
+/*    font-family: monospace;*/
+}
+
+.info{
+    font-size: x-large;
+}
+
+.topHalf{
+    max-height: 80%;
+}
+
+.bottomHalf{
+    text-align: center;
+    font-size: larger;
+}

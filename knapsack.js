@@ -6,7 +6,10 @@ var h = 600;
 var height = 100;
 var history = [];
 var ratio = 0;
-var bestWeight = 0;
+var bestValue = 0;
+var itemList = [];
+var valueList = [];
+var remaining = maxWeight; 
 
 function scatter(){
         //Create SVG element
@@ -45,7 +48,9 @@ function scatter(){
 
 }    
 
-$(document).ready(function(){   
+$(document).ready(function(){  
+    
+    $('.stillSpace').text(remaining);
 
     //makes captions for each image
     $(".images").each(function(){
@@ -63,6 +68,18 @@ $(document).ready(function(){
         d3.selectAll("circle").remove();
         d3.selectAll(".coordinate").remove();
         scatter();
+    })
+    
+    $(".clearValues").click(function(){
+        ratio = 0;
+        bestValue = 0;
+        itemList = [];
+        valueList = [];
+        
+        $('#ratio').text(ratio);
+        $('#ratioItems').text("None");
+        $('#bestValue').text(bestValue);
+        $('#bestItems').text("None");
     })
 
 
@@ -98,16 +115,27 @@ $(document).ready(function(){
 
         if (value/weight > ratio){
             ratio = value/weight 
-            $('.ratio').text(ratio);
-            var itemList = [];
+            $('#ratio').text(ratio);
+            itemList = [];
             $("#knapsack").children('figure').children('img').each(function(){
                 itemList.push($(this).data("name"));
             })
-            $('.ratioItems').text(itemList);
+            $('#ratioItems').text(itemList.sort());
             
         }
 
+        if (value > bestValue){
+            bestValue = value;
+            $('#bestValue').text(bestValue);
+            valueList = [];
+            $("#knapsack").children('figure').children('img').each(function(){
+                valueList.push($(this).data("name"));
+            })
+            $('#bestItems').text(valueList.sort());
+        }
         
+        remaining = maxWeight - weight;
+        $('.stillSpace').text(remaining);
         
         
         history.push([weight, value]);
