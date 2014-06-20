@@ -2,7 +2,6 @@
 body {
     width: 100%;
     padding: 2%;
-/*    background-color: #ffe1e7 !important;*/
     background-image: url(whiteStars.gif) !important;
 }
 
@@ -18,7 +17,7 @@ body {
     width: 95%;
     height: 300px;
     padding: 7%;
-    background-color: white;
+/*    background-color: white;*/
 }
 
 #house{
@@ -37,6 +36,7 @@ body {
 
 #d3s{
     padding: 0%;
+    background-color: white;
     
 }
 
@@ -120,4 +120,10 @@ figure figcaption{
 
 .states{
     font-size: x-large;
+}
+
+
+#spaces{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.70) ;    
 }
