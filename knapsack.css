@@ -22,14 +22,14 @@ body {
 
 #house{
 /*    background-image: url(hardwood.jpg);*/
-    background-color: rgba(197, 255, 139,0.8);
+    background-color: rgba(197, 255, 139,0.9);
 }
 
 
 #knapsack{
 /*    background-image: url(jeans.jpg);*/
 /*    background-color: #CBC0D2;*/
-    background-color: rgba(203,192,210,0.8);
+    background-color: rgba(203,192,210,0.9);
 }
 
 
@@ -115,4 +115,8 @@ figure figcaption{
 .bottomHalf{
     text-align: center;
     font-size: larger;
+}
+
+.states{
+    font-size: x-large;
 }

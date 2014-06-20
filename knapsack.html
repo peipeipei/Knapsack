@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">     
     </script>
-    
-    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js">
+    </script>
     
     
     <script src="knapsack.js"> </script>
@@ -39,12 +39,12 @@
         
         <div class="inner" id="house">
         
-            <figure class="images"><img src="radio.png" data-value="100" data-weight="1" data-name="radio" class="stolen-item"><figcaption class="caption"></figcaption></figure>
-            <figure class="images"><img src="vase.png" data-value="125" data-weight="3" data-name="vase" class="stolen-item"><figcaption class="caption"></figcaption></figure>
-            <figure class="images"><img src="painting.png" data-value="600" data-weight="15" data-name="painting" class="stolen-item"><figcaption class="caption"></figcaption></figure>
-            <figure class="images"><img src="clock.png" data-value="125" data-weight="5" data-name="clock" class="stolen-item"><figcaption class="caption"></figcaption></figure>
-            <figure class="images"><img src="computer.png" data-value="300" data-weight="13" data-name="computer" class="stolen-item"><figcaption class="caption"></figcaption></figure>
-            <figure class="images"><img src="book.png" data-value="200" data-weight="7" data-name="book" class="stolen-item"><figcaption class="caption"></figcaption></figure>
+            <figure class="images"><img src="radio.png" data-value="20" data-weight="4" data-name="radio" class="stolen-item"><figcaption class="caption"></figcaption></figure>
+            <figure class="images"><img src="vase.png" data-value="50" data-weight="2" data-name="vase" class="stolen-item"><figcaption class="caption"></figcaption></figure>
+            <figure class="images"><img src="painting.png" data-value="90" data-weight="9" data-name="painting" class="stolen-item"><figcaption class="caption"></figcaption></figure>
+            <figure class="images"><img src="clock.png" data-value="175" data-weight="10" data-name="clock" class="stolen-item"><figcaption class="caption"></figcaption></figure>
+            <figure class="images"><img src="computer.png" data-value="200" data-weight="20" data-name="computer" class="stolen-item"><figcaption class="caption"></figcaption></figure>
+            <figure class="images"><img src="book.png" data-value="10" data-weight="1" data-name="book" class="stolen-item"><figcaption class="caption"></figcaption></figure>
             
             
         </div>
@@ -82,6 +82,7 @@
 
     <div class="minor">
         <div class="top" id="scatter">
+            <text class="states">States of the Knapsack</text>
             <div>
                 <text class=extraInfo>Best Value-to-Weight Ratio: </text>
                 <text class="theInfo" id="ratio">0</text>
@@ -117,7 +118,6 @@
 
     
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     
     

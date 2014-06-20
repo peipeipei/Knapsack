@@ -25,7 +25,7 @@ function scatter(){
                 return d[0]*17;
             })
             .attr("cy", function(d) {
-                return d[1]/2.2   ;
+                return d[1]   ;
             })
             .attr("r", 4);
         svg.selectAll("text")
@@ -40,7 +40,7 @@ function scatter(){
                 return d[0]*17;
             })
             .attr("y", function(d) {
-                return d[1]/2.2;
+                return d[1];
             })
             .attr("font-family", "sans-serif")
             .attr("font-size", "12px")
